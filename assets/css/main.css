@@ -1,0 +1,43 @@
+section.hero-section {
+  height: 80vh;
+  position: relative;
+}
+
+img.img-hero {
+  position: absolute;
+  right: 0;
+  top: 8%;
+  width: 650px;
+}
+
+section.brand-section {
+  margin-top: 144px;
+}
+
+section.mentor-section {
+  margin-top: 144px;
+}
+
+section.howto-section {
+  margin-top: 144px;
+}
+
+section.testi-section {
+  margin-top: 144px;
+}
+
+section.ads-section {
+  padding: 150px 0px;
+  margin-top: 144px;
+  background-color: #f4f7ff;
+}
+
+footer {
+  margin-top: 144px;
+  margin-bottom: 72px;
+}
+@media (max-width: 992px) {
+  section.ads-section {
+    padding: 82px 0px;
+  }
+}

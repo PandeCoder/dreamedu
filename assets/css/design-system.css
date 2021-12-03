@@ -1,0 +1,239 @@
+/* Add Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@font-face {
+  font-family: "ps-regular";
+  src: url(/assets/fonts/Product\ Sans\ Regular.ttf);
+}
+
+@font-face {
+  font-family: "ps-bold";
+  src: url(/assets/fonts/Product\ Sans\ Bold.ttf);
+}
+
+/* Body */
+body {
+  overflow-x: hidden;
+  background-color: #fbfbfb;
+}
+
+/* Navbar Main */
+.nav-main {
+  position: relative;
+  width: 100%;
+  height: 74px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-lists {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.nav-a-links {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Buttons & Links */
+
+a.a-nav-link {
+  font-family: "Roboto";
+  text-decoration: none;
+  color: #2b2940;
+  font-size: 16px;
+}
+a.low-emp-link {
+  font-family: "Roboto";
+  text-decoration: none;
+  color: #919191;
+  font-size: 16px;
+}
+
+button.btn-primary-custom {
+  font-family: "ps-bold";
+  font-size: 16px;
+  color: #fff;
+  background-color: #221c5e;
+  outline: none;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 100px;
+}
+button.btn-secondary-custom {
+  font-family: "ps-bold";
+  font-size: 16px;
+  color: #221c5e;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 100px;
+}
+
+/* Para */
+
+p.low-emp-spaced {
+  font-family: "ps-regular";
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.6em;
+  text-transform: uppercase;
+  color: #696969;
+}
+
+p.low-emp {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 28px;
+  color: #919191;
+}
+p.high-emp-gradient {
+  font-family: "ps-bold";
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.3em;
+  background: -webkit-linear-gradient(
+    354deg,
+    rgba(34, 28, 94, 1) 0%,
+    rgba(140, 158, 200, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Heading */
+h1.h1-heading {
+  font-family: "ps-bold";
+  font-size: 54px;
+  color: #2b2940;
+}
+h2.h2-heading {
+  font-family: "ps-bold";
+  font-size: 48px;
+  color: #2b2940;
+}
+h6.h6-heading {
+  font-family: "ps-bold";
+  font-size: 24px;
+  color: #2b2940;
+}
+
+/* Utils */
+
+.deg-90 {
+  transform: rotate(90deg);
+}
+
+/* Card */
+.card-mentor {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.card-mentor img {
+  width: 100%;
+}
+
+.card-mentor h4 {
+  font-family: "ps-bold";
+  font-size: 32px;
+  color: #ffffff;
+  position: absolute;
+  z-index: 1;
+  bottom: 24px;
+  left: 24px;
+}
+
+.card-feature {
+  padding: 34px;
+  background-color: #fff;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.card-feature:hover {
+  filter: drop-shadow(0px 8px 44px rgba(0, 0, 0, 0.08));
+  transition: 0.3s;
+  transform: scale(1.02);
+}
+
+/* 992px Responsive */
+@media (max-width: 992px) {
+  /* Nav Main */
+  .nav-burger img {
+    width: 24px;
+  }
+
+  .nav-brand {
+    z-index: 2;
+  }
+  .nav-burger {
+    z-index: 2;
+  }
+  .nav-lists {
+    filter: drop-shadow(0px 8px 44px rgba(0, 0, 0, 0.08));
+    z-index: 1;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 94px;
+    padding-bottom: 24px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: #fff;
+    /* Reposition */
+    transform: translateY(-120%);
+  }
+  .nav-a-links {
+    flex-direction: column;
+    height: 60%;
+  }
+  .nav-a-links a.a-nav-link {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .nav-buttons {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-buttons button {
+    font-size: 24px;
+  }
+
+  /* ONLY TRIGGER WITH DOM */
+  .open-nav {
+    transform: translateY(0);
+    transition: 0.3s ease-in;
+  }
+  .close-nav {
+    transform: translateY(-100%);
+    transition: 0.3s ease-out;
+  }
+  .mr-24 {
+    margin-right: 24px;
+    transition: 0.3 ease-in;
+  }
+  .ml-24 {
+    margin-left: 24px;
+  }
+
+  /* Heading */
+  h1.h1-heading {
+    font-size: 38px;
+  }
+  h2.h2-heading {
+    font-size: 38px;
+  }
+}
