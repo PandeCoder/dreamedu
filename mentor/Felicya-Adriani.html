@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="../assets/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <!-- Customs CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/design-system.css" />
+    <link
+      rel="icon"
+      href="../assets/img/icons/logo-icon.svg"
+      type="image/x-icon"
+    />
+    <title>Dream Edu - Cari Mentor Impian Kamu</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="container">
+        <nav class="nav-main">
+          <div class="nav-brand">
+            <img src="../assets/img/logo.svg" alt="" />
+          </div>
+          <div class="nav-lists close-nav">
+            <div class="nav-a-links">
+              <a href="/" class="a-nav-link">Beranda</a>
+              <a href="/" class="a-nav-link">Kelas</a>
+              <a href="/" class="a-nav-link">Artikel</a>
+              <a href="/" class="a-nav-link">Tentang</a>
+            </div>
+            <div class="nav-buttons">
+              <button class="btn-secondary-custom">Masuk</button>
+              <button
+                class="btn-primary-custom"
+                onclick="redirectTo('register')"
+              >
+                Daftar Gratis
+              </button>
+            </div>
+          </div>
+          <div class="nav-burger d-lg-none d-block" id="nav-toggler">
+            <img src="../assets/img/icons/burger-nav.svg" alt="" />
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-4 mb-lg-0 mb-4">
+          <div class="card-section-profile">
+            <div style="z-index: 1; position: relative">
+              <img
+                src="../assets/img/profiles/felicya-adriani.png"
+                alt=""
+                class="img-profile img-fluid"
+              />
+            </div>
+            <div class="mt-3">
+              <h6 class="h6-heading">Felicya Adriani</h6>
+              <p class="low-emp">
+                Teknisi di Telkam Industri <br />
+                Subang, Indonesia
+              </p>
+              <div class="tag">
+                <img src="../assets/img/icons/bulb.svg" alt="" />
+                <div style="width: 6px"></div>
+                <h6 class="h6-mini">Fisika</h6>
+              </div>
+            </div>
+            <div class="cover-profile"></div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="card-section-profile">
+            <h6 class="h6-heading">Booking Jadwal Hari Ini</h6>
+            <div class="row mt-4">
+              <div class="col-6 mb-3">
+                <button class="btn-disabled w-100">08.00 - 12.00 WIB</button>
+              </div>
+              <div class="col-6 mb-3">
+                <button class="btn-border-custom w-100">
+                  13.00 - 16.00 WIB
+                </button>
+              </div>
+              <div class="col-6 mb-lg-0 mb-3">
+                <button class="btn-border-custom w-100">
+                  13.00 - 16.00 WIB
+                </button>
+              </div>
+              <div class="col-6">
+                <button class="btn-border-custom w-100">
+                  13.00 - 16.00 WIB
+                </button>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col">
+                <button class="btn-primary-custom" style="font-size: 16px">
+                  Booking
+                  <img src="../assets/img/icons/arr-right.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-lg-6 mb-lg-0 mb-3">
+                <p class="low-emp mb-0">Jumlah Murid</p>
+                <div class="d-flex align-items-center">
+                  <img src="../assets/img/icons/users.svg" alt="" />
+                  <h6 class="h6-heading mb-0">1256</h6>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <p class="low-emp mb-0">Biaya Mentoring</p>
+                <div class="d-flex align-items-center">
+                  <h6 class="h6-heading mb-0">
+                    Rp150.000<span style="font-size: 16px">/sesi</span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-custom">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-3 mb-lg-0 mb-5">
+            <img src="../assets/img/logo.svg" alt="" />
+            <p class="low-emp mt-3">
+              Tempat cari mentormu yang tepat, sesuaikan dengan cara belajar
+              kamu dan jadilah cerdas dengan style-mu.
+            </p>
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <div
+                  class="d-flex justify-content-lg-between align-items-center"
+                >
+                  <a href="../">
+                    <img src="../assets/img/icons/instagram.svg" alt="" />
+                  </a>
+                  <a href="../">
+                    <img src="../assets/img/icons/facebook.svg" alt="" />
+                  </a>
+                  <a href="../">
+                    <img src="../assets/img/icons/twitter.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 d-flex flex-column mb-lg-0 mb-4">
+            <h6 class="h6-heading mb-3">Tentang</h6>
+            <a href="/" class="low-emp-link mb-3">Deskripsi</a>
+            <a href="/" class="low-emp-link mb-3">Layanan Kami</a>
+            <a href="/" class="low-emp-link mb-3">Tim Pengembang</a>
+          </div>
+          <div class="col-lg-2 d-flex flex-column mb-lg-0 mb-4">
+            <h6 class="h6-heading mb-3">Perusahaan</h6>
+            <a href="/" class="low-emp-link mb-3">Partnership</a>
+            <a href="/" class="low-emp-link mb-3">Terms of Use</a>
+            <a href="/" class="low-emp-link mb-3">Privacy </a>
+          </div>
+          <div class="col-lg-2 d-flex flex-column mb-lg-0 mb-4">
+            <h6 class="h6-heading mb-3">Peralatan</h6>
+            <a href="/" class="low-emp-link mb-3">RestAPI</a>
+            <a href="/" class="low-emp-link mb-3">Premium API</a>
+          </div>
+          <div class="col-lg-2 d-flex flex-column mb-lg-0 mb-4">
+            <h6 class="h6-heading mb-3">Kontak</h6>
+            <a href="/" class="low-emp-link mb-3">Whatsapp</a>
+            <a href="/" class="low-emp-link mb-3">Email</a>
+            <a href="/" class="low-emp-link mb-3">Telegram</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="../assets/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Jquery & App JS -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>

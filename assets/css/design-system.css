@@ -67,6 +67,16 @@ button.btn-primary-custom {
   padding: 14px 24px;
   border-radius: 100px;
 }
+button.btn-border-custom {
+  font-family: "ps-bold";
+  font-size: 14px;
+  color: #221c5e;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #221c5e;
+  padding: 14px 24px;
+  border-radius: 8px;
+}
 button.btn-secondary-custom {
   font-family: "ps-bold";
   font-size: 16px;
@@ -77,7 +87,16 @@ button.btn-secondary-custom {
   padding: 14px 24px;
   border-radius: 100px;
 }
-
+button.btn-disabled {
+  font-family: "ps-bold";
+  font-size: 14px;
+  color: #808080;
+  background-color: #eeeeee;
+  outline: none;
+  border: 1px solid #ebebeb;
+  padding: 14px 24px;
+  border-radius: 8px;
+}
 /* Para */
 
 p.low-emp-spaced {
@@ -94,6 +113,12 @@ p.low-emp {
   font-size: 16px;
   line-height: 28px;
   color: #919191;
+}
+p.high-emp {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 28px;
+  color: #2b2940;
 }
 p.high-emp-gradient {
   font-family: "ps-bold";
@@ -125,6 +150,12 @@ h6.h6-heading {
   font-size: 24px;
   color: #2b2940;
 }
+h6.h6-mini {
+  font-family: "ps-bold";
+  font-size: 16px;
+  color: #221c5e;
+  margin-bottom: 0px;
+}
 
 /* Utils */
 
@@ -141,7 +172,14 @@ h6.h6-heading {
 .card-mentor img {
   width: 100%;
 }
-
+.tag {
+  padding: 4px 16px;
+  background-color: #f0f4ff;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  border-radius: 20px;
+}
 .card-mentor h4 {
   font-family: "ps-bold";
   font-size: 32px;
@@ -165,6 +203,23 @@ h6.h6-heading {
   transform: scale(1.02);
 }
 
+.card-section-profile {
+  padding: 34px;
+  background-color: #fff;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cover-profile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 36%;
+  background-color: #8c9ec8;
+}
+
 /* 992px Responsive */
 @media (max-width: 992px) {
   /* Nav Main */
@@ -173,14 +228,14 @@ h6.h6-heading {
   }
 
   .nav-brand {
-    z-index: 2;
+    z-index: 11;
   }
   .nav-burger {
-    z-index: 2;
+    z-index: 11;
   }
   .nav-lists {
     filter: drop-shadow(0px 8px 44px rgba(0, 0, 0, 0.08));
-    z-index: 1;
+    z-index: 10;
     position: absolute;
     flex-direction: column;
     width: 100%;
